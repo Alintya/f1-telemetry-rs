@@ -102,7 +102,7 @@ pub enum PacketType {
     MotionEx,
 }
 
-pub(crate) fn parse_packet(size: usize, packet: &[u8]) -> Result<Packet, UnpackError> {
+pub fn parse_packet(size: usize, packet: &[u8]) -> Result<Packet, UnpackError> {
     let packet_format = parse_version(packet);
 
     match packet_format {
