@@ -122,6 +122,7 @@ pub enum SafetyCar {
     None,
     Full,
     Virtual,
+    FormationLap,
 }
 
 impl SafetyCar {
@@ -130,6 +131,7 @@ impl SafetyCar {
             SafetyCar::None => "No Safety Car",
             SafetyCar::Virtual => "Virtual Safety Car",
             SafetyCar::Full => "Safety Car",
+            SafetyCar::FormationLap => "Formation Lap",
         }
     }
 }
