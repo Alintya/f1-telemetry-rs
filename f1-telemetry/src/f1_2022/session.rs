@@ -92,7 +92,7 @@ fn unpack_safety_car(value: u8) -> Result<SafetyCar, UnpackError> {
         0 => Ok(SafetyCar::None),
         1 => Ok(SafetyCar::Full),
         2 => Ok(SafetyCar::Virtual),
-        3 => Ok(SafetyCar::FormationLap)
+        3 => Ok(SafetyCar::FormationLap),
         _ => Err(UnpackError(format!("Invalid SafetyCar value: {}", value))),
     }
 }
